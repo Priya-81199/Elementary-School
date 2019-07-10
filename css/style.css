@@ -1,0 +1,426 @@
+body{
+	margin:0;
+	padding:0;
+	overflow-x: hidden;
+	background-color: #f1f1f1;
+	text-align: center;
+	font-family: 'Merriweather', serif;
+}
+
+#logo{
+	padding: 5px 0 5px 15px;
+}
+p{
+	line-height: 2;
+}
+nav{
+	background-color: #c8dad3;
+	padding: 20px 0px;
+	text-align: left;
+}
+ul{
+	float: right; 
+}
+li{
+	font-family: 'Patrick Hand', cursive;
+	display: inline-block;
+	margin:10px 80px;
+	font-size: 25px;
+	text-decoration: none;
+}
+a{
+	text-decoration: overline;
+}
+#slideshow{
+	height:600px;
+	width:100%;
+	overflow:hidden;
+	text-align: left;
+}
+.slide-wrapper{
+	width:500%;
+	margin:0px;
+	position: relative;
+	animation-name: slide;
+	animation-duration: 10s;
+	animation-iteration-count: infinite;
+}
+.slide-number{
+	width: 20%;
+	height: 600px;
+}
+
+@keyframes slide{
+	0%{margin-left: 0%;}
+	50%{margin-left: -100%;}
+	100%{margin-left: -200%;}
+}
+.nav_text:hover{
+	color:#49beb7;
+
+}
+hr{
+	width:5%;
+	border-style: dotted none none;
+	border-width: 8px;
+	border-color:lightgrey;
+
+}
+h2{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 2.5rem;
+	color:#085f63;
+}
+h3{
+	font-family: 'Montserrat', sans-serif;	
+	color: #11999E;
+}
+.about-img{
+	height: 50%;
+	width: 50%;
+	border-radius: 100%;
+	float:left;
+	margin-right: 30px;
+}
+.about-us{
+	background-color: #e8e8e8;
+	width: 70%;
+	margin:100px auto;
+	text-align: left;
+	line-height: 2;
+	padding:30px;
+	border-radius: 1%;
+}
+.btn {
+  background: #11cdd4;
+  background-image: -webkit-linear-gradient(top, #11cdd4, #11999e);
+  background-image: -moz-linear-gradient(top, #11cdd4, #11999e);
+  background-image: -ms-linear-gradient(top, #11cdd4, #11999e);
+  background-image: -o-linear-gradient(top, #11cdd4, #11999e);
+  background-image: linear-gradient(to bottom, #11cdd4, #11999e);
+  -webkit-border-radius: 8;
+  -moz-border-radius: 8;
+  border-radius: 8px;
+  font-family: 'Montserrat', sans-serif;
+  color: #ffffff;
+  font-size: 15px;
+  padding: 5px 12px 5px 12px;
+  text-decoration: none;
+  float: right;
+}
+
+.btn:hover {
+  background: #30e3cb;
+  background-image: -webkit-linear-gradient(top, #30e3cb, #2bc4ad);
+  background-image: -moz-linear-gradient(top, #30e3cb, #2bc4ad);
+  background-image: -ms-linear-gradient(top, #30e3cb, #2bc4ad);
+  background-image: -o-linear-gradient(top, #30e3cb, #2bc4ad);
+  background-image: linear-gradient(to bottom, #30e3cb, #2bc4ad);
+  text-decoration: none;
+}
+.parent{
+	display: flex;
+	width:100%;
+	background-color:#c8dad3;
+	border-radius: 1%;
+	padding: 1px;
+	margin:0px;
+}
+.child{
+	flex-basis: 33.33%;
+
+}
+.child-1{
+	background-color: #e8e8e8;
+	border-radius: 2%;
+	margin: 10px;
+	padding: 15px;
+	height: 100%;
+}
+.child-2{
+	background-color: #e8e8e8;
+	border-radius: 2%;
+	margin: 10px;
+	padding: 15px;
+	height: 100%;
+}
+.child-3{
+	background-color: #e8e8e8;
+	border-radius: 2%;
+	margin: 10px;
+	padding: 15px;
+	height: 100%;
+}
+
+.flex-image{
+	width: 80%;
+	height: 80%;
+	border-radius: 100%;	
+}
+.bottom-container{
+	margin-top: 100px;
+	padding: 50px 0 20px;
+	line-height: 2;
+	background-color:#222831;
+}
+.links{
+	color: #11999E;
+	font-size: 30px;
+}
+.copywrite{
+	color:lightgrey;
+}
+.footer-link{
+	color:lightgrey;
+	margin-left: 20px;
+}
+.abt{
+	display: flex;
+	
+}
+.abtc{
+	flex-basis: 25%;
+	display: block;
+	width:20%;
+}
+
+.description{
+	width: 50%;	
+	margin: 10px auto;
+
+}
+.faculty{
+	background-color: #f1f1f1;
+}
+h4{
+	color:grey;
+}
+.teacher-heading{
+	font-size:25px;
+	font-weight: bolder;
+}
+.gallery-img{
+	width:10%;
+	flex-basis: 30%;
+	border-radius: 8%;
+	padding: 10px;
+	margin:10px;
+	background-color:#c8dad3;
+
+}
+.middle{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+.gallery-img:hover{
+	
+}
+.contact-us{
+	background-color: #f1f1f1;
+	opacity: 0.8;
+
+}
+.contact{
+	border-radius: 5%;
+	margin:5px auto;
+}
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+div {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+nav{
+	
+		padding: 2px 0px;
+	
+}
+ul{
+	float: right; 
+}
+li{ 
+	font-size: 22px;
+	display: inline-block;
+	margin:1px 5px;
+}
+.parent{
+	display: block;
+}
+} 
+.description{
+	width: 75%;	
+
+}
+.middle{
+	display: flex;
+}
+.gallery-img{
+	flex-basis: 90%;
+	margin:5px auto;
+	padding: 5px;
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+nav{
+	padding: 6px 0px;
+	
+}
+ul{
+	float: right; 
+}
+
+li{
+	display: inline-block;
+	margin:2px 16px;
+}
+.parent{
+	display: block;
+}
+} 
+.description{
+	width: 75%;	
+}
+.middle{
+	display: flex;
+}
+.gallery-img{
+	flex-basis: 90%;
+	margin:5px auto;
+	padding: 5px;
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+nav{
+	
+	padding: 5px 0px;
+	
+}
+ul{
+	float: right; 
+}
+li{
+	display: inline-block;
+	margin:3px 24px;
+}
+.parent{
+	display: flex;
+	width:100%;
+}
+.child{
+	flex-basis: 33.33%;
+}
+.description{
+	width: 50%;	
+	margin: 10px auto;
+
+}
+.middle{
+	display: flex;
+}
+.gallery-img{
+	flex-basis: 42%;
+	margin:5px auto;
+	padding: 5px;
+}
+} 
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+nav{
+	
+	padding: 10px 0px;
+	
+}
+ul{
+	float: right; 
+}
+li{
+	font-family: 'Patrick Hand', cursive;
+	display: inline-block;
+	margin:9px 64px;
+}
+.parent{
+	display: flex;
+	width:100%;
+}
+.child{
+	flex-basis: 33.33%;
+}
+.description{
+	width: 50%;	
+	margin: 10px auto;
+
+} 
+.middle{
+	display: flex;
+}
+.gallery-img{
+	flex-basis: 42%;
+	margin:10px auto;
+	padding: 10px;
+}
+}
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+nav{
+	
+	padding: 20px 0px;
+	
+}
+ul{
+	float: right; 
+}
+li{
+	font-family: 'Patrick Hand', cursive;
+	display: inline-block;
+	margin:10px 80px;
+}
+.parent{
+	display: flex;
+	width:100%;
+}
+.child{
+	flex-basis: 33.33%;
+}
+.description{
+	width: 50%;	
+	margin: 10px auto;
+
+}
+.middle{
+	display: flex;
+}
+.gallery-img{
+	flex-basis: 30%;
+	margin:10px auto;
+	padding: 10px;
+}
+}
