@@ -213,9 +213,7 @@ h4{
 	flex-direction: row;
 	flex-wrap: wrap;
 }
-.gallery-img:hover{
-	
-}
+
 .contact-us{
 	background-color: #f1f1f1;
 	opacity: 0.8;
@@ -226,7 +224,17 @@ h4{
 	margin:5px auto;
 }
 input[type=text], select {
-  width: 100%;
+  width: 50%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+textarea{
+  width: 55%;
   padding: 12px 20px;
   margin: 8px 0;
   display: inline-block;
@@ -236,7 +244,7 @@ input[type=text], select {
 }
 
 input[type=submit] {
-  width: 100%;
+  width: 30%;
   background-color: #4CAF50;
   color: white;
   padding: 14px 20px;
@@ -249,12 +257,32 @@ input[type=submit] {
 input[type=submit]:hover {
   background-color: #45a049;
 }
-
-div {
-  border-radius: 5px;
-  background-color: #f2f2f2;
-  padding: 20px;
+.gallery-upload{
+	background-color: #e8e8e8;
+	width: 50%;
+	margin:10px auto;
+	text-align: center;
+	line-height: 2;
+	padding:30px;
+	border-radius: 2%;	
 }
+
+input[type=file] {
+  width: 50%;
+  background-color: darkgrey;
+  color: white;
+  padding: 14px 20px;
+  border: none;
+  border-radius: 4px;
+}
+.table1{
+    width:50%; 
+	margin : auto;
+}
+.table-data{
+	width:25%;
+}
+
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {

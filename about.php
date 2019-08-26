@@ -1,3 +1,18 @@
+<?php
+  $images='';
+  $conn = mysqli_connect('localhost','root','123456','dynamic_gallery');
+  $result = mysqli_query($conn,'SELECT * FROM faculty');    
+  while ($row = $result->fetch_assoc()) {
+    //$images.="<img class='gallery-img' src='img/".$row['img_name']."'>";
+
+    $images.='<div class="child child-3">';
+    $images.='<img class="flex-image" src="faculty_img/'.$row['f_img'].'" alt="">';//jaha na smje atkana yepp
+    $images.='<h3>'.$row['f_name'].'</h3>';//kar yaha change aare ye sab variabes kaha use hore h images wale.. smja nhai ye sab aachaa haa yaad aaya got it// ab pahele jo static hai usse delete kar aare sunn 
+    //mujhe vo mera wala photo chota lag rha hwo ...css me hoga changes tera jo pic tha uska hosrizontal size lamba tha so uss hishb nai vo square photo h ... to baki aks??
+    $images.='<h4>'.$row['f_sub'].'</h4>';
+    $images.='<p>'.$row['f_desc'].'<br></div>';
+    } 
+?>
 <?php include 'inc/header.php';?>	
   <h2 class="abt-text">About us</h2>
   <div class="abt">
@@ -27,36 +42,7 @@
   <hr>
   <h3 class="teacher-heading"> Meet Our Faculty</h3>
   <div class="parent faculty">
-    <div class="child child-3">
-      <img class="flex-image" src="images/t1.jpg" alt="">
-      <h3>Bianca Wilson</h3>
-      <h4>English Teacher</h4>
-      <p>Lorem ipsum dolor sit amet, mauris sed consectetuer. Etiam et eu, bibendum interdum, lacus quis mauris. Curabitur wisi, quisque vel eu, rutrum nam.<br>
-    </div>
-    <div class="child child-3">
-      <img class="flex-image" src="images/t2.jpg" alt="">
-      <h3>Bianca Wilson</h3>
-      <h4>Music Teacher</h4>
-      <p>Lorem ipsum dolor sit amet, mauris sed consectetuer. Etiam et eu, bibendum interdum, lacus quis mauris. Curabitur wisi, quisque vel eu, rutrum nam.<br>
-    </div>
-    <div class="child child-3">
-      <img class="flex-image" src="images/t3.jpg" alt="">
-      <h3>Bianca Wilson</h3>
-      <h4>Maths Teacher</h4>
-      <p>Lorem ipsum dolor sit amet, mauris sed consectetuer. Etiam et eu, bibendum interdum, lacus quis mauris. Curabitur wisi, quisque vel eu, rutrum nam.<br>
-    </div>
-    <div class="child child-3">
-      <img class="flex-image" src="images/t4.jpg" alt="">
-      <h3>Bianca Wilson</h3>
-      <h4>Science Teacher</h4>
-      <p>Lorem ipsum dolor sit amet, mauris sed consectetuer. Etiam et eu, bibendum interdum, lacus quis mauris. Curabitur wisi, quisque vel eu, rutrum nam.<br>
-    </div>
-    <div class="child child-3">
-      <img class="flex-image" src="images/t5.jpg" alt="">
-      <h3>Bianca Wilson</h3>
-      <h4>Art Teacher</h4>
-      <p>Lorem ipsum dolor sit amet, mauris sed consectetuer. Etiam et eu, bibendum interdum, lacus quis mauris. Curabitur wisi, quisque vel eu, rutrum nam.<br>
-    </div>
+    <?php echo $images;?>
   </div>
   </div>
 <?php include 'inc/footer.php';?>
