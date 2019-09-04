@@ -282,6 +282,68 @@ input[type=file] {
 .table-data{
 	width:25%;
 }
+.login-head{
+	display: inline;
+}
+.login-div{
+	background-color: rgba(0,0,0,0.05);
+	width: 50%;
+	margin:10px auto;
+	text-align: center;
+	line-height: 2;
+	padding:30px;
+	border-radius: 1%;	
+}
+.input_area{
+	width: 30%;
+	padding: 8px 15px;
+	margin: 5px 0;
+	display: inline-block;
+	border: 1px solid #ccc;
+	box-sizing: border-box;
+	border-radius: 4px;
+}
+
+#input_override{
+	width: 30%;
+	padding: 8px 15px;
+	margin: 5px 0;
+	display: inline-block;
+	border: 1px solid #ccc;
+	box-sizing: border-box;
+	border-radius: 4px;
+}
+
+.butn {
+  background: #226597;
+  background-image: -webkit-linear-gradient(top, #226597, #113f67);
+  background-image: -moz-linear-gradient(top, #226597, #113f67);
+  background-image: -ms-linear-gradient(top, #226597, #113f67);
+  background-image: -o-linear-gradient(top, #226597, #113f67);
+  background-image: linear-gradient(to bottom, #226597, #113f67);
+  -webkit-border-radius: 10;
+  -moz-border-radius: 10;
+  border-radius: 10px;
+  font-family: 'Itim', cursive;
+  color: #ffffff;
+  font-size: 20px;
+  margin-top: 10px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+.butn:hover {
+  background: #87c0cd;
+  background-image: -webkit-linear-gradient(top, #87c0cd, #113f67);
+  background-image: -moz-linear-gradient(top, #87c0cd, #113f67);
+  background-image: -ms-linear-gradient(top, #87c0cd, #113f67);
+  background-image: -o-linear-gradient(top, #87c0cd, #113f67);
+  background-image: linear-gradient(to bottom, #87c0cd, #113f67);
+  text-decoration: none;
+}
+.button-div{
+	margin-top: 100px;
+}
 
 
 /* Extra small devices (phones, 600px and down) */
