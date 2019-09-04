@@ -1,3 +1,4 @@
+
 <?php
 if(isset($_POST['a_login'])){
 $conn = mysqli_connect('localhost','root','123456','dynamic_gallery');
@@ -10,6 +11,7 @@ if($conn){
 	?>
     <script>alert('LOGGED IN')</script>
     <?php
+    header('location:http://localhost/Elementary_School/admin_page.php');
 	}
 	else{
 	?>

@@ -91,6 +91,7 @@ h3{
 	padding:30px;
 	border-radius: 1%;
 }
+
 .btn {
   background: #11cdd4;
   background-image: -webkit-linear-gradient(top, #11cdd4, #11999e);
@@ -344,6 +345,7 @@ input[type=file] {
 .button-div{
 	margin-top: 100px;
 }
+
 
 
 /* Extra small devices (phones, 600px and down) */

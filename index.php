@@ -19,7 +19,7 @@
       cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
       proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
       	<br>
-      	<a class="btn" href="index.php">Read More!</a>
+      	<a class="btn" href="about.php">Read More!</a>
   	  </p>
     </div>
     <hr>
@@ -29,7 +29,7 @@
       <img class="flex-image" src="images/teacher-1.jpg" alt="">
       <h3>Certified Teachers</h3>
       <p>Lorem ipsum dolor sit amet, quis in duis, iaculis id felis. Consectetuer vestibulum, nunc urna lectus, erat ligula. Hendrerit nam, lectus ante, ut lorem eros.<br>
-      	<a class="btn" href="index.php">Read More!</a><br></p>
+      	<a class="btn" href="about.php#faculty_section">Read More!</a><br></p>
     </div>
     <div class="child child-2">
       <img class="flex-image" src="images/library.jpg" alt="">

@@ -21,16 +21,14 @@
     }
   }
 ?>
-
-<!DOCTYPE html>
-<html>
-	<head>
-		<title>Upload and save</title>
-	</head>
-	<body>
-		<form method="POST" enctype="multipart/form-data">
-			<input type="file" name="images" />
-			<button type="submit" name="Upload-img">Click to Add</button>
+<?php include 'inc/header.php';?>
+<br><br>
+<h3>Add New Pictures to Gallery.</h3>
+<div style="height: 50px"></div>
+    <form method="POST" enctype="multipart/form-data">
+			<input type="file" name="images" /><br><br>
+			<button class="btn" type="submit" name="Upload-img" style="float: none;
+      padding: 15px;">Click to Add</button>
 		</form>
-	</body>
-</html>
+<div style="height: 100px"></div>
+<?php include 'inc/footer.php';?>

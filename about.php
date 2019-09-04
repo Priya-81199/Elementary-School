@@ -39,6 +39,7 @@
     proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
   </p>
   <br>
+  <section id="faculty_section"></section>
   <hr>
   <h3 class="teacher-heading"> Meet Our Faculty</h3>
   <div class="parent faculty">
